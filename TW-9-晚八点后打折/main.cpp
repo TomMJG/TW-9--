@@ -7,9 +7,40 @@
 //
 
 #include <iostream>
+#include <string>
+using namespace std;
+struct goods{
+    string barcode;
+    string name;
+    string unit;
+    string category;
+    string subCategory;
+    double price;
+};
+
+class cashRegister {
+private:
+    bool discountTime;//是否处于打折时间
+    
+public:
+    cashRegister(){
+        discountTime = false;
+    }
+    double calPrice() {
+        double totalPrice = 0.0;
+        return totalPrice;
+    }
+};
+
+void initCashRegister(string path){
+    
+}
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+    string pricePath;
+    cout<<"请输入商品价格的文件目录，进行收银机的设置："<<endl;
+    cin>>pricePath;
+    initCashRegister(pricePath);
+    
+    
 }
