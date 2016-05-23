@@ -13,28 +13,53 @@
 #include "cashRegister.h"
 using namespace std;
 
-//初始化收银机
-void initCashRegister(){
-    //首次录入商品信息
-    goods tempGoods;
-//    cout<<"请输入商品编码：(输入完成后用-1结束)"<<endl;
-//    while(cin>>tempGoods.barcode){
-//        cout<<"商品名称：";
-//        cin>>tempGoods.name;
-//        cout<<"数量单位：";
-//        cin>>tempGoods.unit;
-//        cout<<"商品类别：";
-//        cin>>tempGoods.category;
-//        cout<<"商品子类别：";
-//        cin>>tempGoods.subCategory;
-//        cout<<"单价：";
-//        cin>>tempGoods.price;
-//        
-//        totalGoods.push_back(tempGoods);
-//    }
+void showOperationInfo();//显示操作信息
+void operation(int num);
+
+int main() {
+    cout<<"欢迎使用商店收银系统"<<endl;
+    cash.initCash();
+A:
+    int choose;
+    showOperationInfo();
+    if(cin>>choose){
+        operation(choose);
+        goto A;
+    }
+    
+    return 0;
 }
 
-int main(int argc, const char * argv[]) {
-    initCashRegister();
-    
+void showOperationInfo(){
+    cout<<"1、扫描商品"<<endl;
+    cout<<"2、修改折扣时间段"<<endl;
+    cout<<"3、修改折扣"<<endl;
+    cout<<"4、增加新的商品"<<endl;
+    cout<<"5、删除商品"<<endl;
+    cout<<"6、退出系统"<<endl;
+}
+
+void operation(int num){
+    switch (num) {
+        case 1:
+        {
+            //首先处理传进来的顾客购物信息
+            string shoppingInfo;
+            cin>>shoppingInfo;
+        }
+            cout<<cash.calPrice()<<endl;
+        case 2:
+            
+            break;
+        case 3:
+            break;
+        case 4:
+            break;
+        case 5:
+            break;
+        case 6:
+            break;
+        default:
+            break;
+    }
 }
