@@ -8,39 +8,33 @@
 
 #include <iostream>
 #include <string>
+#include <fstream>
+#include <vector>
+#include "cashRegister.h"
 using namespace std;
-struct goods{
-    string barcode;
-    string name;
-    string unit;
-    string category;
-    string subCategory;
-    double price;
-};
 
-class cashRegister {
-private:
-    bool discountTime;//是否处于打折时间
-    
-public:
-    cashRegister(){
-        discountTime = false;
-    }
-    double calPrice() {
-        double totalPrice = 0.0;
-        return totalPrice;
-    }
-};
-
-void initCashRegister(string path){
-    
+//初始化收银机
+void initCashRegister(){
+    //首次录入商品信息
+    goods tempGoods;
+//    cout<<"请输入商品编码：(输入完成后用-1结束)"<<endl;
+//    while(cin>>tempGoods.barcode){
+//        cout<<"商品名称：";
+//        cin>>tempGoods.name;
+//        cout<<"数量单位：";
+//        cin>>tempGoods.unit;
+//        cout<<"商品类别：";
+//        cin>>tempGoods.category;
+//        cout<<"商品子类别：";
+//        cin>>tempGoods.subCategory;
+//        cout<<"单价：";
+//        cin>>tempGoods.price;
+//        
+//        totalGoods.push_back(tempGoods);
+//    }
 }
 
 int main(int argc, const char * argv[]) {
-    string pricePath;
-    cout<<"请输入商品价格的文件目录，进行收银机的设置："<<endl;
-    cin>>pricePath;
-    initCashRegister(pricePath);
-    
+    initCashRegister();
     
 }

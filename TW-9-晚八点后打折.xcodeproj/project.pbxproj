@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		25F64C6B1CF029EE00730233 /* TW-9-晚八点后打折 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "TW-9-晚八点后打折"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25F64C6E1CF029EE00730233 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		25F64C751CF02FC300730233 /* cashRegister.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cashRegister.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				25F64C6E1CF029EE00730233 /* main.cpp */,
+				25F64C751CF02FC300730233 /* cashRegister.h */,
 			);
 			path = "TW-9-晚八点后打折";
 			sourceTree = "<group>";
@@ -239,6 +241,7 @@
 				25F64C741CF029EE00730233 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
